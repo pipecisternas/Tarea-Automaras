@@ -11,7 +11,6 @@ PAPELILLO
 	K ==~ 12;
 	B ==~ A;
 	I ==~ K;
-	dsyifahksdglksd
 	J ==~ L;
 	J ==~ HAYMANO;
 	L ==~ NOHAYMANO;
