@@ -1,0 +1,25 @@
+KRIPPY
+PAPELILLO
+	CUANTOSG I;
+	CUANTOSG K;
+	TENIMANO J;
+	TENIMANO L;
+	SEPA A;
+	SEPA B;
+	I ==~ K - I;
+	K ==~ 12;
+	B ==~ A;
+	I ==~ K;
+	J ==~ L;
+	J ==~ HAYMANO;
+	L ==~ NOHAYMANO;
+	A ==~ "hola";
+	ENRROLAR(I K J L A); 
+	ENRROLAR("fin del programa");
+	
+	CANNABIS(L <-> HAYMANO)
+	{
+		J ==~NOHAYMANO;
+		L ==~ HAYMANO;
+	}
+KUSH
