@@ -136,8 +136,7 @@ public class OneLoveParserSemantic extends OneLoveParserBaseVisitor<Object>{
 		return null; 
 		
 	}
-	
-	
+		
 	@Override 
 	public String visitAssing(OneLoveParserParser.AssingContext ctx) { 
 		String id = "";
