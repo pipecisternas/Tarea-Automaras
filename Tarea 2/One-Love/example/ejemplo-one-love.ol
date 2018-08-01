@@ -11,7 +11,6 @@ PAPELILLO
 	K ==~ 12;
 	B ==~ A;
 	I ==~ K;
-	dsyifahksdglksd
 	J ==~ L;
 	J ==~ HAYMANO;
 	L ==~ NOHAYMANO;
@@ -33,10 +32,5 @@ PAPELILLO
 		H ==~ "hola";
 		QUEMAR(H);
 		ENRROLAR(Q);
-	}
-	
-	PEGAO ( I ==~2 ; I != 3 ; I ==~ I +1){
-		CUANTOSG R;
-	
 	}
 KUSH
