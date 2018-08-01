@@ -234,17 +234,20 @@ public class OneLoveParserSemantic extends OneLoveParserBaseVisitor<Object>{
 			}	
 		}
 		System.out.println("\t}");
-		if(ctx.ELSE().getText().equals("PARAGUA")) {
-			
-			inicio_else = "\telse {";
-			System.out.println(inicio_else);
-			
-			if(ctx.else_sentence() != null) {
-			
-				visitElse_sentence(ctx.else_sentence());
+		if(ctx.ELSE() != null) {
+			if(ctx.ELSE().getText().equals("PARAGUA")) {
 				
+				inicio_else = "\telse {";
+				System.out.println(inicio_else);
+				
+				if(ctx.else_sentence() != null) {
+				
+					visitElse_sentence(ctx.else_sentence());
+					
+				}
 			}
 		}
+		
 		return null; 
 	}
 
