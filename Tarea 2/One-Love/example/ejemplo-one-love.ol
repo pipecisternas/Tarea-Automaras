@@ -5,7 +5,6 @@ BACILE
 BAJON
 	CUANTOSG R;
 	SEPA W;
-
 PAPELILLO
 	CUANTOSG I;
 	CUANTOSG K ==~ 12;
@@ -14,7 +13,7 @@ PAPELILLO
 	SEPA A;
 	SEPA B ==~ "CHAO";
 	I ==~ 12;
-	I ==~ K - I;
+	I ==~ K - K;
 	K ==~ 12;
 	B ==~ A;
 	I ==~ K;
@@ -34,7 +33,7 @@ PAPELILLO
 		ENRROLAR(P);
 		
 	}PARAGUA{
-		CUANTOSG Q;
+		CUANTOSG Q ==~ 10 ;
 		SEPA H;
 		H ==~ "hola";
 		QUEMAR(H);

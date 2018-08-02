@@ -122,12 +122,6 @@ public class OneLoveParserParser extends Parser {
 		public StatContext stat(int i) {
 			return getRuleContext(StatContext.class,i);
 		}
-		public List<DeclaracionContext> declaracion() {
-			return getRuleContexts(DeclaracionContext.class);
-		}
-		public DeclaracionContext declaracion(int i) {
-			return getRuleContext(DeclaracionContext.class,i);
-		}
 		public ProgramContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -162,13 +156,13 @@ public class OneLoveParserParser extends Parser {
 					{
 					{
 					setState(58);
-					declaracion();
+					stat();
 					}
 					}
 					setState(61); 
 					_errHandler.sync(this);
 					_la = _input.LA(1);
-				} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << ENTERO) | (1L << PALABRA) | (1L << VF))) != 0) );
+				} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << SQRT) | (1L << COS) | (1L << SEN) | (1L << TAN) | (1L << IF) | (1L << READ) | (1L << WRITE) | (1L << ENTERO) | (1L << PALABRA) | (1L << VF) | (1L << WHILE) | (1L << FOR) | (1L << NUMBER) | (1L << BOOLEAN) | (1L << ID))) != 0) );
 				}
 			}
 
@@ -186,13 +180,13 @@ public class OneLoveParserParser extends Parser {
 					{
 					{
 					setState(66);
-					declaracion();
+					stat();
 					}
 					}
 					setState(69); 
 					_errHandler.sync(this);
 					_la = _input.LA(1);
-				} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << ENTERO) | (1L << PALABRA) | (1L << VF))) != 0) );
+				} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << SQRT) | (1L << COS) | (1L << SEN) | (1L << TAN) | (1L << IF) | (1L << READ) | (1L << WRITE) | (1L << ENTERO) | (1L << PALABRA) | (1L << VF) | (1L << WHILE) | (1L << FOR) | (1L << NUMBER) | (1L << BOOLEAN) | (1L << ID))) != 0) );
 				}
 			}
 
@@ -1852,7 +1846,7 @@ public class OneLoveParserParser extends Parser {
 		public TerminalNode LPAR() { return getToken(OneLoveParserParser.LPAR, 0); }
 		public TerminalNode RPAR() { return getToken(OneLoveParserParser.RPAR, 0); }
 		public TerminalNode DOTCOMA() { return getToken(OneLoveParserParser.DOTCOMA, 0); }
-		public TerminalNode STRING() { return getToken(OneLoveParserParser.STRING,0); }
+		public TerminalNode STRING() { return getToken(OneLoveParserParser.STRING ,0); }
 		public List<TerminalNode> ID() { return getTokens(OneLoveParserParser.ID); }
 		public TerminalNode ID(int i) {
 			return getToken(OneLoveParserParser.ID, i);
@@ -1972,8 +1966,8 @@ public class OneLoveParserParser extends Parser {
 		"\3\2\2\2\"\u00df\3\2\2\2$\u00e2\3\2\2\2&\u00e6\3\2\2\2(\u00e8\3\2\2\2"+
 		"*\u00ee\3\2\2\2,\u00f6\3\2\2\2.\u00fe\3\2\2\2\60\u0104\3\2\2\2\62\u010a"+
 		"\3\2\2\2\64\u0110\3\2\2\2\66\u0116\3\2\2\28\u011c\3\2\2\2:A\5\6\4\2;="+
-		"\5\b\5\2<>\5\22\n\2=<\3\2\2\2>?\3\2\2\2?=\3\2\2\2?@\3\2\2\2@B\3\2\2\2"+
-		"A;\3\2\2\2AB\3\2\2\2BI\3\2\2\2CE\5\n\6\2DF\5\22\n\2ED\3\2\2\2FG\3\2\2"+
+		"\5\b\5\2<>\5\20\t\2=<\3\2\2\2>?\3\2\2\2?=\3\2\2\2?@\3\2\2\2@B\3\2\2\2"+
+		"A;\3\2\2\2AB\3\2\2\2BI\3\2\2\2CE\5\n\6\2DF\5\20\t\2ED\3\2\2\2FG\3\2\2"+
 		"\2GE\3\2\2\2GH\3\2\2\2HJ\3\2\2\2IC\3\2\2\2IJ\3\2\2\2JK\3\2\2\2KM\5\f\7"+
 		"\2LN\5\20\t\2ML\3\2\2\2NO\3\2\2\2OM\3\2\2\2OP\3\2\2\2PQ\3\2\2\2QR\5\16"+
 		"\b\2R\3\3\2\2\2SX\5\26\f\2TU\5\30\r\2UV\7\2\2\3VX\3\2\2\2WS\3\2\2\2WT"+
