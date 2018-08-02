@@ -52,9 +52,12 @@ public class OneLoveParserSemantic extends OneLoveParserBaseVisitor<Object>{
 	
 	@Override 
 	public Object visitConstante(OneLoveParserParser.ConstanteContext ctx) {
+		String inicio_constante = "";
 		if(ctx.CONST().getText().equals("BAJON")){
-			System.out.println("#define ");
+			inicio_constante = "#define";
+
 		}
+		
 		return null; 
 		
 	}

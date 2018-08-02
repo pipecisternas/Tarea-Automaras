@@ -1852,7 +1852,7 @@ public class OneLoveParserParser extends Parser {
 		public TerminalNode LPAR() { return getToken(OneLoveParserParser.LPAR, 0); }
 		public TerminalNode RPAR() { return getToken(OneLoveParserParser.RPAR, 0); }
 		public TerminalNode DOTCOMA() { return getToken(OneLoveParserParser.DOTCOMA, 0); }
-		public TerminalNode STRING() { return getToken(OneLoveParserParser.STRING,0);}
+		public TerminalNode STRING() { return getToken(OneLoveParserParser.STRING,0); }
 		public List<TerminalNode> ID() { return getTokens(OneLoveParserParser.ID); }
 		public TerminalNode ID(int i) {
 			return getToken(OneLoveParserParser.ID, i);
