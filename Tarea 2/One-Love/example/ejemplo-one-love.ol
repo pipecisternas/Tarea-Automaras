@@ -21,9 +21,9 @@ PAPELILLO
 	J ==~ HAYMANO;
 	L ==~ NOHAYMANO;
 	A ==~ "HOLA";
-	ENRROLAR(I K J L A); 
+	ENRROLAR(I K J L A);
 	ENRROLAR("fin del programa");
-	
+
 	CANNABIS(L <-> HAYMANO Y J >-< HAYMANO)
 	{
 		CUANTOSG P;
@@ -31,7 +31,7 @@ PAPELILLO
 		L ==~ HAYMANO;
 		QUEMAR (P);
 		ENRROLAR(P);
-		
+
 	}PARAGUA{
 		CUANTOSG Q ==~ 10 ;
 		SEPA H;
